@@ -1,0 +1,18 @@
+# Ignorar arquivos de áudio
+*.mp3
+*.avi
+
+# Ignorar o diretório de ambiente virtual
+venv/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Pastas de compilação
+__pycache__/
+*.py[cod]
+
+# Arquivos de configuração
+*.env
+.env
