@@ -1,0 +1,12 @@
+{% extends 'conversor/base_generic.html' %}
+
+{% block title %}
+Conversão Bem-Sucedida - Conversor de Vídeos
+{% endblock %}
+
+{% block content %}
+    <h1>Seu vídeo foi convertido com sucesso!</h1>
+    <p>Nome do arquivo convertido: {{ nome_arquivo }}</p>
+    <a href="/conversor/media/{{ nome_arquivo }}">Baixar</a>
+    <a href="{% url 'conversor:converter_video' %}">Converter outro vídeo</a>
+{% endblock %}
