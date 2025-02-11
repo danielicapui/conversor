@@ -1,0 +1,14 @@
+{% extends 'conversor/base_generic.html' %}
+
+{% block title %}
+Converter Vídeo - Conversor de Vídeos
+{% endblock %}
+
+{% block content %}
+    <h1>Converter Vídeo</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Converter</button>
+    </form>
+{% endblock %}
